@@ -1,0 +1,19 @@
+:root{
+  --bg:#000000; --text:#f2f2f7; --muted:#b7b7c9; --card:#171725; --border:#26263a; --brand:#7c4dff;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+a{color:var(--text);text-decoration:none}
+.container{width:min(1000px,92%);margin:0 auto}
+.site-header,.site-footer{border-bottom:1px solid var(--border);background:#008afc1e}
+.site-header .container{padding:28px 0}
+.lead{color:var(--muted);margin:-6px 0 0}
+.about{display:grid;grid-template-columns:140px 1fr;gap:24px;align-items:center;padding:40px 0;border-bottom:1px solid var(--border)}
+.avatar{width:140px;height:140px;border-radius:16px;object-fit:cover;border:1px solid var(--border)}
+.skills,.experience,.contacts{padding:32px 0;border-bottom:1px solid var(--border)}
+.tags{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:0}
+.tags li{padding:6px 10px;border:1px solid var(--border);border-radius:999px;background:#131321;color:var(--text);font-size:14px}
+.job h3{margin:0}
+.muted{color:var(--muted);margin:4px 0 8px}
+.site-footer .container{padding:20px 0;text-align:center;color:var(--muted)}
+@media(max-width:640px){.about{grid-template-columns:1fr;text-align:center}.avatar{margin:0 auto}}
